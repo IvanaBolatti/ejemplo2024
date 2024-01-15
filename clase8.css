@@ -1,0 +1,46 @@
+.grilla{
+    display: grid;
+    height: 100vw;
+    background-color: deepskyblue;
+    grid-template-columns:30% 50% 20%;
+    grid-template-rows: 300px 100px 700px 200px;
+    grid-template-areas: "nav header header"
+                         "nav section aside"
+                         "nav section aside"
+                         "nav footer footer";
+    grid-gap: 2%;
+}
+header{
+grid-area: header;
+}
+nav{
+grid-area:nav;
+}
+
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+grid-area: footer;
+}
+
+@media only screen and (min-width:768px)
+{
+    .grilla{
+        grid-template-rows: 30% 20% 40%;
+        background-color:deeppink;
+    }
+    
+  
+}
+@media only screen and (min-width:980px)
+{
+    .grilla{
+        grid-template-rows: 30% 20% 40%;
+        background-color:rgb(204, 255, 20);
+}
+}
+    
